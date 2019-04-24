@@ -1,0 +1,11 @@
+.btn:focus, .btn.focus {
+	box-shadow: none !important;
+}
+
+.dropdown-item:focus {
+	background: #1ABC9C;
+}
+
+#content {
+	width: 100%;
+}
