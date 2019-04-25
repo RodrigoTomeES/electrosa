@@ -18,7 +18,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Home | Electrosa</title>
+	<title>Add article | Electrosa</title>
 </head>
 
 <body class="stretched">
@@ -88,7 +88,6 @@
 						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
 							<a class="dropdown-item tleft" href="profile.html">Profile</a>
 							<a class="dropdown-item tleft" href="profile.html">Messages<span class="badge badge-pill badge-secondary fright" style="margin-top: 3px;">5</span></a>
-							<a class="dropdown-item tleft" href="profile.html">My Orders</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item tleft" href="../index.html">Logout <i class="icon-signout"></i></a>
 						</ul>
@@ -100,73 +99,22 @@
 
 						<ul>
 							<li class="current"><a href="#"><div>Home</div><span>Lets Start</span></a></li>
-							<!-- Mega Menu
-							============================================= -->
-							<li><a href="../catalogue.html"><div>Catalogue</div><span>All you can image</span></a>
-								<div class="mega-menu-content style-2 clearfix">
-									<ul class="mega-menu-column col-lg-6">
-										<li class="mega-menu-title"><a href="#"><div>Household appliances</div></a>
-											<ul>
-												<li><a href="#"><div>Extractor hood</div></a></li>
-												<li><a href="#"><div>Kitchen & Oven</div></a></li>
-												<li><a href="#"><div>Fridge</div></a></li>
-												<li><a href="#"><div>Oven</div></a></li>
-												<li><a href="#"><div>Washing machine</div></a></li>
-												<li><a href="#"><div>Dishwasher</div></a></li>
-												<li><a href="#"><div>Glass ceramic</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-lg-6">
-										<li class="mega-menu-title"><a href="#"><div>Small household appliances</div></a>
-											<ul>
-												<li><a href="#"><div>Vaccum cleaner</div></a></li>
-												<li><a href="#"><div>Microwave</div></a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</li><!-- .mega-menu end -->
-							<li><a href="#"><div>Sale</div><span>Awesome Works</span></a></li>
-							<li><a href="../contact.html"><div>Contact</div><span>Get In Touch</span></a></li>
+							<li><a href="#"><div>Articles</div><span>Articles</span></a>
+								<ul>
+									<li><a href="catalogue.html"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+									<li><a href="#"><div>Statistics</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Clients</div><span>Clients</span></a>
+								<ul>
+									<li><a href="#"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Orders</div><span>Orders</span></a></li>
+							<li><a href="#"><div>Stocks</div><span>Stock</span></a></li>
 						</ul>
-
-						<!-- Top Cart
-						============================================= -->
-						<div id="top-cart">
-							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-							<div class="top-cart-content">
-								<div class="top-cart-title">
-									<h4>Shopping Cart</h4>
-								</div>
-								<div class="top-cart-items">
-									<div class="top-cart-item clearfix">
-										<div class="top-cart-item-image">
-											<a href="#"><img src="../images/shop/Placa/placa.jpg" alt="Glass ceramic" /></a>
-										</div>
-										<div class="top-cart-item-desc">
-											<a href="#">Glass ceramic</a>
-											<span class="top-cart-item-price">$19.99</span>
-											<span class="top-cart-item-quantity">x 2</span>
-										</div>
-									</div>
-									<div class="top-cart-item clearfix">
-										<div class="top-cart-item-image">
-											<a href="#"><img src="../images/shop/Microondas/microondas.jpg" alt="Microwave" /></a>
-										</div>
-										<div class="top-cart-item-desc">
-											<a href="#">Microwave</a>
-											<span class="top-cart-item-price">$24.99</span>
-											<span class="top-cart-item-quantity">x 3</span>
-										</div>
-									</div>
-								</div>
-								<div class="top-cart-action clearfix">
-									<span class="fleft top-checkout-price">$114.95</span>
-									<button onclick="window.location.href='../cart.html'" class="button button-3d button-small nomargin fright">View Cart</button>
-								</div>
-							</div>
-						</div><!-- #top-cart end -->
 
 						<!-- Top Search
 						============================================= -->
@@ -184,6 +132,141 @@
 			</div>
 
 		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<div class="container clearfix">
+
+					<!-- Postcontent
+					============================================= -->
+					<div class="postcontent nobottommargin">
+
+						<h3>Add an article</h3>
+
+						<div class="contact-widget">
+
+							<div class="contact-form-result"></div>
+
+							<form class="nobottommargin" id="template-add-article" name="template-add-article" action="#" method="post" enctype="multipart/form-data">
+
+								<div class="form-process"></div>
+
+								<div class="col_two_third">
+									<label for="template-add-article-name">Name <small>*</small></label>
+									<input type="text" id="template-add-article-name" name="template-add-article-name" value="" class="sm-form-control required" />
+								</div>
+
+								<div class="col_one_third col_last">
+									<label for="template-add-article-pvp">P.V.P <small>*</small></label>
+									<input type="text" id="template-add-article-pvp" name="template-add-article-pvp" value="" class="required pvp sm-form-control" />
+								</div>
+
+								<div class="clear"></div>
+
+								<div class="col_two_third ">
+									<label for="template-add-article-service">Type <small>*</small></label>
+									<select id="required template-add-article-service" name="template-add-article-service" class="sm-form-control">
+										<option value="" hidden="" disabled="">-- Select One --</option>
+										<option value="Wordpress">Wordpress</option>
+										<option value="PHP / MySQL">PHP / MySQL</option>
+										<option value="HTML5 / CSS3">HTML5 / CSS3</option>
+										<option value="Graphic Design">Graphic Design</option>
+									</select>
+								</div>
+
+								<div class="col_one_third col_last">
+									<label for="template-add-article-service">Maker <small>*</small></label>
+									<select id="required template-add-article-service" name="template-add-article-service" class="sm-form-control">
+										<option value="" hidden="" disabled="">-- Select One --</option>
+										<option value="Wordpress">Wordpress</option>
+										<option value="PHP / MySQL">PHP / MySQL</option>
+										<option value="HTML5 / CSS3">HTML5 / CSS3</option>
+										<option value="Graphic Design">Graphic Design</option>
+									</select>
+								</div>
+
+								<div class="clear"></div>
+
+								<div class="col_full">
+									<label for="template-add-article-message">Description</label>
+									<textarea class="sm-form-control" id="template-add-article-message" name="template-add-article-message" rows="6" cols="30"></textarea>
+								</div>
+
+								<div class="col_full">
+									<label for="template-add-article-message">Upload image <small>*</small></label>
+									<input type="file" id="template-add-article-file" name="template-add-article-file" value="" class="required sm-form-control" />
+								</div>
+
+								<div class="col_full hidden">
+									<input type="text" id="template-add-article-botcheck" name="template-add-article-botcheck" value="" class="sm-form-control" />
+								</div>
+
+								<div class="col_full">
+									<button class="button button-3d nomargin" type="submit" id="template-add-article-submit" name="template-add-article-submit" value="submit">Add article</button>
+								</div>
+
+							</form>
+
+						</div>
+
+					</div><!-- .postcontent end -->
+
+					<!-- Sidebar
+					============================================= -->
+					<div class="sidebar col_last nobottommargin">
+
+						<div class="list-group">
+							<a href="profile.html" class="list-group-item list-group-item-action clearfix">Profile <i class="icon-user float-right"></i></a>
+							<a href="#" class="list-group-item list-group-item-action clearfix">Messages <i class="icon-envelope2 float-right"></i></a>
+							<a href="#" class="list-group-item list-group-item-action clearfix">Billing <i class="icon-credit-cards float-right"></i></a>
+							<a href="../index.html" class="list-group-item list-group-item-action clearfix">Logout <i class="icon-line2-logout float-right"></i></a>
+						</div>
+
+						<div class="fancy-title topmargin title-border">
+							<h4>Social Profiles</h4>
+						</div>
+
+						<a href="#" class="social-icon si-facebook si-small si-rounded si-light" title="Facebook">
+							<i class="icon-facebook"></i>
+							<i class="icon-facebook"></i>
+						</a>
+
+						<a href="#" class="social-icon si-gplus si-small si-rounded si-light" title="Google+">
+							<i class="icon-gplus"></i>
+							<i class="icon-gplus"></i>
+						</a>
+
+						<a href="#" class="social-icon si-dribbble si-small si-rounded si-light" title="Dribbble">
+							<i class="icon-dribbble"></i>
+							<i class="icon-dribbble"></i>
+						</a>
+
+						<a href="#" class="social-icon si-flickr si-small si-rounded si-light" title="Flickr">
+							<i class="icon-flickr"></i>
+							<i class="icon-flickr"></i>
+						</a>
+
+						<a href="#" class="social-icon si-linkedin si-small si-rounded si-light" title="LinkedIn">
+							<i class="icon-linkedin"></i>
+							<i class="icon-linkedin"></i>
+						</a>
+
+						<a href="#" class="social-icon si-twitter si-small si-rounded si-light" title="Twitter">
+							<i class="icon-twitter"></i>
+							<i class="icon-twitter"></i>
+						</a>
+
+					</div><!-- .sidebar end -->
+
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
 
 		<!-- Footer
 		============================================= -->

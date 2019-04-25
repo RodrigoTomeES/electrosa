@@ -92,7 +92,6 @@
 						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
 							<a class="dropdown-item tleft" href="profile.html">Profile</a>
 							<a class="dropdown-item tleft" href="profile.html">Messages<span class="badge badge-pill badge-secondary fright" style="margin-top: 3px;">5</span></a>
-							<a class="dropdown-item tleft" href="profile.html">My Orders</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item tleft" href="../index.html">Logout <i class="icon-signout"></i></a>
 						</ul>
@@ -104,73 +103,22 @@
 
 						<ul>
 							<li class="current"><a href="#"><div>Home</div><span>Lets Start</span></a></li>
-							<!-- Mega Menu
-							============================================= -->
-							<li><a href="../catalogue.html"><div>Catalogue</div><span>All you can image</span></a>
-								<div class="mega-menu-content style-2 clearfix">
-									<ul class="mega-menu-column col-lg-6">
-										<li class="mega-menu-title"><a href="#"><div>Household appliances</div></a>
-											<ul>
-												<li><a href="#"><div>Extractor hood</div></a></li>
-												<li><a href="#"><div>Kitchen & Oven</div></a></li>
-												<li><a href="#"><div>Fridge</div></a></li>
-												<li><a href="#"><div>Oven</div></a></li>
-												<li><a href="#"><div>Washing machine</div></a></li>
-												<li><a href="#"><div>Dishwasher</div></a></li>
-												<li><a href="#"><div>Glass ceramic</div></a></li>
-											</ul>
-										</li>
-									</ul>
-									<ul class="mega-menu-column col-lg-6">
-										<li class="mega-menu-title"><a href="#"><div>Small household appliances</div></a>
-											<ul>
-												<li><a href="#"><div>Vaccum cleaner</div></a></li>
-												<li><a href="#"><div>Microwave</div></a></li>
-											</ul>
-										</li>
-									</ul>
-								</div>
-							</li><!-- .mega-menu end -->
-							<li><a href="#"><div>Sale</div><span>Awesome Works</span></a></li>
-							<li><a href="../contact.html"><div>Contact</div><span>Get In Touch</span></a></li>
+							<li><a href="#"><div>Articles</div><span>Articles</span></a>
+								<ul>
+									<li><a href="catalogue.html"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+									<li><a href="#"><div>Statistics</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Clients</div><span>Clients</span></a>
+								<ul>
+									<li><a href="#"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Orders</div><span>Orders</span></a></li>
+							<li><a href="#"><div>Stocks</div><span>Stock</span></a></li>
 						</ul>
-
-						<!-- Top Cart
-						============================================= -->
-						<div id="top-cart">
-							<a href="#" id="top-cart-trigger"><i class="icon-shopping-cart"></i><span>5</span></a>
-							<div class="top-cart-content">
-								<div class="top-cart-title">
-									<h4>Shopping Cart</h4>
-								</div>
-								<div class="top-cart-items">
-									<div class="top-cart-item clearfix">
-										<div class="top-cart-item-image">
-											<a href="#"><img src="../images/shop/Placa/placa.jpg" alt="Glass ceramic" /></a>
-										</div>
-										<div class="top-cart-item-desc">
-											<a href="#">Glass ceramic</a>
-											<span class="top-cart-item-price">$19.99</span>
-											<span class="top-cart-item-quantity">x 2</span>
-										</div>
-									</div>
-									<div class="top-cart-item clearfix">
-										<div class="top-cart-item-image">
-											<a href="#"><img src="../images/shop/Microondas/microondas.jpg" alt="Microwave" /></a>
-										</div>
-										<div class="top-cart-item-desc">
-											<a href="#">Microwave</a>
-											<span class="top-cart-item-price">$24.99</span>
-											<span class="top-cart-item-quantity">x 3</span>
-										</div>
-									</div>
-								</div>
-								<div class="top-cart-action clearfix">
-									<span class="fleft top-checkout-price">$114.95</span>
-									<button onclick="window.location.href='../cart.html'" class="button button-3d button-small nomargin fright">View Cart</button>
-								</div>
-							</div>
-						</div><!-- #top-cart end -->
 
 						<!-- Top Search
 						============================================= -->
@@ -218,8 +166,7 @@
 
 										<ul class="tab-nav clearfix">
 											<li><a href="#tab-personal-data"><i class="icon-user"></i> Personal Data</a></li>
-											<li><a href="#tab-orders"><i class="icon-cart-arrow-down"></i> Orders</a></li>
-											<li><a href="#tab-reviews"><i class="icon-star3"></i> Reviews</a></li>
+											<li><a href="#tab-billing"><i class="icon-credit-cards"></i> Billing</a></li>
 										</ul>
 
 										<div class="tab-container">
@@ -232,13 +179,18 @@
 														</div>
 
 														<div class="col_full">
-															<label for="update-data-form-business-name">Business name: *</label>
-															<input type="text" id="update-data-form-business-name" name="update-data-form-business-name" value="" class="form-control" />
+															<label for="update-data-form-name">Name: *</label>
+															<input type="text" id="update-data-form-name" name="update-data-form-name" value="" class="form-control" />
 														</div>
 
 														<div class="col_full">
-															<label for="update-data-form-cif">CIF: *</label>
-															<input type="text" id="update-data-form-cif" name="update-data-form-cif" value="" class="form-control" />
+															<label for="update-data-form-surname">Surname: *</label>
+															<input type="text" id="update-data-form-surname" name="update-data-form-surname" value="" class="form-control" />
+														</div>
+
+														<div class="col_full">
+															<label for="update-data-form-nif">NIF: *</label>
+															<input type="text" id="update-data-form-nif" name="update-data-form-nif" value="" class="form-control" />
 														</div>
 
 														<div class="col_full">
@@ -282,166 +234,35 @@
 												</div>
 											</div>
 
-											<div class="tab-content clearfix" id="tab-orders">
+											<div class="tab-content clearfix" id="tab-billing">
+												<div class="clearfix">
+													<form id="update-billing-form" name="update-billing-form" class="nobottommargin" action="#" method="post">
+														<div class="col_full indicates-required">
+															* Indicates required
+														</div>
 
-												<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium harum ea quo! Nulla fugiat earum, sed corporis amet iste non, id facilis dolorum, suscipit, deleniti ea. Nobis, temporibus magnam doloribus. Reprehenderit necessitatibus esse dolor tempora ea unde, itaque odit. Quos.</p>
+														<div class="col_full">
+															<label for="update-billing-form-name">Name: *</label>
+															<input type="text" id="update-billing-form-name" name="update-billing-form-name" value="" class="form-control" />
+														</div>
 
-												<div class="tab-orders">
-													<table class="table table-bordered table-striped">
-														 <thead>
-															<tr>
-																<th colspan="6">List of orders in progress</th>
-															</tr>
-														 </thead>
-														 <thead>
-															<tr>
-																<th class="icon"></th>
-																<th class="icon"></th>
-																<th>Code</th>
-																<th>Date</th>
-																<th>Delivery address</th>
-																<th>Total price</th>
-															</tr>
-														 </thead>
-														 <tbody>
-															<tr>
-																<td class="icon"><a href="#" class="pdf"><i class="icon-file-pdf"></i></a></td>
-																<td class="icon"><a href="#" class="cancel"><i class="icon-times-circle"></i></a></td>
-																<td><i class="icon-line-plus icon"> <a href="order-details.html#tab-orders">P4385347-12</a></i></td>
-																<td>
-																	<code>5/23/2016</code>
-																</td>
-																<td>Lorem ipsum dolor sit amet</td>
-																<td>$37</td>
+														<div class="col_full">
+															<label for="update-billing-form-surname">Surname: *</label>
+															<input type="text" id="update-billing-form-surname" name="update-billing-form-surname" value="" class="form-control" />
+														</div>
 
-																<!-- TO DO -->
-																<!-- <td>
-																	<table class="table table-bordered table-striped">
-																	 <thead>
-																		<tr>
-																			<th colspan="6">Details of the order P4385347-12</th>
-																		</tr>
-																	 </thead>
-																	 <thead>
-																		<tr>
-																			<th>Amount</th>
-																			<th>Item</th>
-																			<th>Retail price</th>
-																			<th>Price</th>
-																			<th>F. E. des</th>
-																			<th>F.E. prev</th>
-																		</tr>
-																	 </thead>
-																	 <tbody>
-																		<tr>
-																			<td>5</td>
-																			<td>Lorem ipsum dolor sit amet</td>
-																			<td>$874</td>
-																			<td>$89569</td>
-																			 <td>
-																				<code>5/23/2016</code>
-																			 </td>
-																			 <td>
-																				<code>6/03/2019</code>
-																			 </td>
-																		</tr>
-																		<tr>
-																			<td>5</td>
-																			<td>Lorem ipsum dolor sit amet</td>
-																			<td>$874</td>
-																			<td>$89569</td>
-																			 <td>
-																				<code>5/23/2016</code>
-																			 </td>
-																			 <td>
-																				<code>6/03/2019</code>
-																			 </td>
-																		</tr>
-																	 </tbody>
-																</table></td> -->
-															</tr>
-															<tr>
-																<td class="icon"><a href="#" class="pdf"><i class="icon-file-pdf"></i></a></td>
-																<td class="icon"><a href="#" class="cancel"><i class="icon-times-circle"></i></a></td>
-																<td><i class="icon-line-plus icon"> <a href="order-details.html#tab-orders">P4385347-12</a></i></td>
-																 <td>
-																	<code>5/23/2016</code>
-																 </td>
-																 <td>Lorem ipsum dolor sit amet</td>
-																 <td>$300</td>
-															</tr>
-														 </tbody>
-													</table>
+														<div class="col_full">
+															<label for="update-billing-form-nif">IBAN: *</label>
+															<input type="text" id="update-billing-form-nif" name="update-billing-form-nif" value="" class="form-control" />
+														</div>
+
+														<div class="col_full nobottommargin">
+															<button class="button button-3d button-black nomargin" id="update-billing-form-submit" name="update-billing-form-submit" value="update-billing">Update Billing</button>
+														</div>
+													</form>
 												</div>
 
 											</div>
-
-											<div class="tab-content clearfix" id="tab-reviews">
-
-												<div class="clear topmargin-sm"></div>
-												<ol class="commentlist noborder nomargin nopadding clearfix">
-													<li class="comment even thread-even depth-1" id="li-comment-1">
-														<div id="comment-1" class="comment-wrap clearfix">
-															<div class="comment-meta">
-																<div class="comment-author vcard">
-																	<span class="comment-avatar clearfix">
-																	<img alt='' src='../images/icons/avatar.jpg' class='avatar avatar-60 photo avatar-default' height='60' width='60' /></span>
-																</div>
-															</div>
-															<div class="comment-content clearfix">
-																<div class="comment-author">John Doe<span><a href="#" title="Permalink to this comment">April 24, 2012 at 10:46 am</a></span></div>
-																<p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-																<a class='comment-reply-link' href='#'><i class="icon-reply"></i></a>
-															</div>
-															<div class="clear"></div>
-														</div>
-														<ul class='children'>
-															<li class="comment byuser comment-author-_smcl_admin odd alt depth-2" id="li-comment-3">
-																<div id="comment-3" class="comment-wrap clearfix">
-																	<div class="comment-meta">
-																		<div class="comment-author vcard">
-
-																			<span class="comment-avatar clearfix">
-																			<img alt='' src='../images/icons/avatar.jpg' class='avatar avatar-40 photo' height='40' width='40' /></span>
-
-																		</div>
-																	</div>
-																	<div class="comment-content clearfix">
-																		<div class="comment-author"><a href='#' rel='external nofollow' class='url'>SemiColon</a><span><a href="#" title="Permalink to this comment">April 25, 2012 at 1:03 am</a></span></div>
-
-																		<p>Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-																		<a class='comment-reply-link' href='#'><i class="icon-reply"></i></a>
-																	</div>
-																	<div class="clear"></div>
-																</div>
-															</li>
-														</ul>
-													</li>
-
-													<li class="comment byuser comment-author-_smcl_admin even thread-odd thread-alt depth-1" id="li-comment-2">
-														<div class="comment-wrap clearfix">
-															<div class="comment-meta">
-																<div class="comment-author vcard">
-																	<span class="comment-avatar clearfix">
-																	<img alt='' src='../images/icons/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' /></span>
-																</div>
-															</div>
-															<div class="comment-content clearfix">
-																<div class="comment-author"><a href='#' rel='external nofollow' class='url'>SemiColon</a><span><a href="#" title="Permalink to this comment">April 25, 2012 at 1:03 am</a></span></div>
-
-																<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-
-																<a class='comment-reply-link' href='#'><i class="icon-reply"></i></a>
-															</div>
-															<div class="clear"></div>
-														</div>
-													</li>
-
-												</ol>
-
-											</div>
-
 										</div>
 
 									</div>
@@ -458,10 +279,8 @@
 
 							<div class="list-group">
 								<a href="profile.html" class="list-group-item list-group-item-action clearfix">Profile <i class="icon-user float-right"></i></a>
-								<a href="#" class="list-group-item list-group-item-action clearfix">Reviews <i class="icon-star3 float-right"></i></a>
 								<a href="#" class="list-group-item list-group-item-action clearfix">Messages <i class="icon-envelope2 float-right"></i></a>
 								<a href="#" class="list-group-item list-group-item-action clearfix">Billing <i class="icon-credit-cards float-right"></i></a>
-								<a href="#" class="list-group-item list-group-item-action clearfix">Orders <i class="icon-cart-arrow-down float-right"></i></a>
 								<a href="../index.html" class="list-group-item list-group-item-action clearfix">Logout <i class="icon-line2-logout float-right"></i></a>
 							</div>
 

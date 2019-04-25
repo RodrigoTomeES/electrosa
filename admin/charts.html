@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="../css/electrosa.css" type="text/css" />
+	<link rel="stylesheet" href="../css/style.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="../css/animate.css" type="text/css" />
+
+	<link rel="stylesheet" href="../css/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Document Title
+	============================================= -->
+	<title>Charts | Electrosa</title>
+</head>
+
+<body class="stretched">
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+		<!-- Top Bar
+		============================================= -->
+		<div id="top-bar" class="d-none d-md-block">
+
+			<div class="container clearfix">
+
+				<div class="col_half nobottommargin">
+
+					<p class="nobottommargin"><strong>Call:</strong> +941-299-260 | <strong>Email:</strong> info@electrosa.com</p>
+
+				</div>
+
+				<div class="col_half col_last fright nobottommargin">
+
+					<!-- Top Links
+					============================================= -->
+					<div class="top-links">
+						<ul>
+							<li><a href="#">USD</a>
+								<ul>
+									<li><a href="#">EUR</a></li>
+									<li><a href="#">AUD</a></li>
+									<li><a href="#">GBP</a></li>
+								</ul>
+							</li>
+							<li><a href="#">EN</a>
+								<ul>
+									<li><a href="#"><img src="../images/icons/flags/spain.png" alt="Spain"> ES</a></li>
+									<li><a href="#"><img src="../images/icons/flags/french.png" alt="French"> FR</a></li>
+									<li><a href="#"><img src="../images/icons/flags/italian.png" alt="Italian"> IT</a></li>
+									<li><a href="#"><img src="../images/icons/flags/german.png" alt="German"> DE</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- .top-links end -->
+
+				</div>
+
+			</div>
+
+		</div><!-- #top-bar end -->
+
+		<!-- Header
+		============================================= -->
+		<header id="header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="../images/logo.png" alt="Electrosa Logo"></a>
+					</div><!-- #logo end -->
+
+					<div id="top-account" class="dropdown">
+						<a href="#" class="btn btn-sm" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="icon-user"></i></a>
+						<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+							<a class="dropdown-item tleft" href="profile.html">Profile</a>
+							<a class="dropdown-item tleft" href="profile.html">Messages<span class="badge badge-pill badge-secondary fright" style="margin-top: 3px;">5</span></a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item tleft" href="../index.html">Logout <i class="icon-signout"></i></a>
+						</ul>
+					</div>
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu">
+
+						<ul>
+							<li class="current"><a href="#"><div>Home</div><span>Lets Start</span></a></li>
+							<li><a href="#"><div>Articles</div><span>Articles</span></a>
+								<ul>
+									<li><a href="catalogue.html"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+									<li><a href="#"><div>Statistics</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Clients</div><span>Clients</span></a>
+								<ul>
+									<li><a href="#"><div>List</div></a></li>
+									<li><a href="#"><div>Add</div></a></li>
+								</ul>
+							</li>
+							<li><a href="#"><div>Orders</div><span>Orders</span></a></li>
+							<li><a href="#"><div>Stocks</div><span>Stock</span></a></li>
+						</ul>
+
+						<!-- Top Search
+						============================================= -->
+						<div id="top-search">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div><!-- #top-search end -->
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap" style="padding-bottom: 30px;">
+
+				<div class="container clearfix">
+
+					<!-- Charts Area
+					============================================= -->
+					<div class="postcontent nobottommargin col_last">
+						<div class="bottommargin divcenter" style=" min-height: 350px;">
+							<canvas id="chart-0"></canvas>
+						</div>
+
+						<div class="toolbar center">
+							<button class="btn btn-secondary btn-sm" id="randomizeData">Randomize Data</button>
+							<button class="btn btn-secondary btn-sm" id="addDataset">Add Dataset</button>
+							<button class="btn btn-secondary btn-sm" id="removeDataset">Remove Dataset</button>
+						</div>
+					</div>
+					<!-- Charts Area End -->
+
+					<!-- Sidebar
+					============================================= -->
+					<div class="sidebar nobottommargin charts-sidebar">
+						<div class="sidebar-widgets-wrap">
+
+							<div class="widget widget-filter-links clearfix">
+
+								<h4>Select Category</h4>
+								<ul class="custom-filter" data-container="#shop" data-active-class="active-filter">
+									<li class="widget-filter-reset active-filter"><a href="#" data-filter="*">Clear</a></li>
+									<li><a href="#" data-filter=".sf-extractor-hood"><div>Extractor hood</div></a></li>
+									<li><a href="#" data-filter=".sf-kitchen-oven"><div>Kitchen & Oven</div></a></li>
+									<li><a href="#" data-filter=".sf-fridge"><div>Fridge</div></a></li>
+									<li><a href="#" data-filter=".sf-oven"><div>Oven</div></a></li>
+									<li><a href="#" data-filter=".sf-washing-machine"><div>Washing machine</div></a></li>
+									<li><a href="#" data-filter=".sf-dishwasher"><div>Dishwasher</div></a></li>
+									<li><a href="#" data-filter=".sf-glass-ceramic"><div>Glass ceramic</div></a></li>
+									<li><a href="#" data-filter=".sf-vaccum-cleaner"><div>Vaccum cleaner</div></a></li>
+									<li><a href="#" data-filter=".sf-microwave"><div>Microwave</div></a></li>
+								</ul>
+
+							</div>
+
+							<div class="widget widget-filter-links clearfix">
+
+								<h4>More settings</h4>
+								<ul class="shop-sorting">
+									<li class="widget-filter-reset active-filter"><a href="#" data-sort-by="original-order">Clear</a></li>
+									<li class="input-filter">
+										<label for="year"><a href="#">Year:</a></label>
+										<input type="number" id="year" name="year" value="1998" min="1998" class="form-control"  data-sort-by="number" />
+									</li>
+									<li class="input-filter">
+										<label for="number-articles"><a href="#">Number:</a></label>
+										<input type="number" id="number-articles" name="number-articles" value="1" min="1" class="form-control"  data-sort-by="number" />
+									</li>
+								</ul>
+
+							</div>
+
+						</div>
+					</div><!-- .sidebar end -->
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<!-- Footer and Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; 2019 All Rights Reserved by Electrosa.<br>
+						<div class="copyright-links"><a href="../where-we-are.html">Where we are</a> / <a href="#">Sitemap</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix">
+							<a href="#" class="social-icon si-small si-borderless si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-twitter">
+								<i class="icon-twitter"></i>
+								<i class="icon-twitter"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-gplus">
+								<i class="icon-gplus"></i>
+								<i class="icon-gplus"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-pinterest">
+								<i class="icon-pinterest"></i>
+								<i class="icon-pinterest"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-vimeo">
+								<i class="icon-vimeo"></i>
+								<i class="icon-vimeo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-github">
+								<i class="icon-github"></i>
+								<i class="icon-github"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-yahoo">
+								<i class="icon-yahoo"></i>
+								<i class="icon-yahoo"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-borderless si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<i class="icon-envelope2"></i> info@electrosa.com <span class="middot">&middot;</span> <i class="icon-headphones"></i> +941-299-260 <span class="middot">&middot;</span> <i class="icon-skype2"></i> ElectrosaOnSkype
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="../js/functions.js"></script>
+
+	<!-- Number of Articles
+	============================================= -->
+	<script>
+		jQuery(document).ready( function($){
+			$('#shop').isotope({
+				transitionDuration: '0.65s',
+				getSortData: {
+					name: '.product-title',
+					price_lh: function( itemElem ) {
+						if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
+							var price = $(itemElem).find('.product-price ins').text();
+						} else {
+							var price = $(itemElem).find('.product-price').text();
+						}
+
+						priceNum = price.split("$");
+
+						return parseFloat( priceNum[1] );
+					},
+					price_hl: function( itemElem ) {
+						if( $(itemElem).find('.product-price').find('ins').length > 0 ) {
+							var price = $(itemElem).find('.product-price ins').text();
+						} else {
+							var price = $(itemElem).find('.product-price').text();
+						}
+
+						priceNum = price.split("$");
+
+						return parseFloat( priceNum[1] );
+					}
+				},
+				sortAscending: {
+					name: true,
+					price_lh: true,
+					price_hl: false
+				}
+			});
+
+			$('.custom-filter:not(.no-count)').children('li:not(.widget-filter-reset)').each( function(){
+				var element = $(this),
+					elementFilter = element.children('a').attr('data-filter'),
+					elementFilterContainer = element.parents('.custom-filter').attr('data-container');
+
+				elementFilterCount = Number( jQuery(elementFilterContainer).find( elementFilter ).length );
+
+				element.append('<span>'+ elementFilterCount +'</span>');
+
+			});
+
+			$('.shop-sorting li').click( function() {
+				$('.shop-sorting').find('li').removeClass( 'active-filter' );
+				$(this).addClass( 'active-filter' );
+				var sortByValue = $(this).find('a').attr('data-sort-by');
+				$('#shop').isotope({ sortBy: sortByValue });
+				return false;
+			});
+		});
+	</script>
+
+	<!-- Charts JS
+	============================================= -->
+	<script src="../js/chart.js"></script>
+	<script src="../js/chart-utils.js"></script>
+
+	<script>
+
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'pie',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						window.chartColors.yellow,
+						window.chartColors.green,
+						window.chartColors.blue,
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					"Red",
+					"Orange",
+					"Yellow",
+					"Green",
+					"Blue"
+				]
+			},
+			options: {
+				responsive: true
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById("chart-0").getContext("2d");
+			window.myPie = new Chart(ctx, config);
+		};
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+			});
+
+			window.myPie.update();
+		});
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var newDataset = {
+				backgroundColor: [],
+				data: [],
+				label: 'New dataset ' + config.data.datasets.length,
+			};
+
+			for (var index = 0; index < config.data.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+
+				var colorName = colorNames[index % colorNames.length];;
+				var newColor = window.chartColors[colorName];
+				newDataset.backgroundColor.push(newColor);
+			}
+
+			config.data.datasets.push(newDataset);
+			window.myPie.update();
+		});
+
+		document.getElementById('removeDataset').addEventListener('click', function() {
+			config.data.datasets.splice(0, 1);
+			window.myPie.update();
+		});
+
+	</script>
+
+</body>
+</html>

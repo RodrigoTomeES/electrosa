@@ -9,3 +9,155 @@
 #content {
 	width: 100%;
 }
+
+.acc_content #register-form .col_full {
+	display: inherit !important;
+}
+
+.col_full.fieldset {
+	border-bottom: 1px dotted #DDD;
+	display: block;
+	position: relative;
+	line-height: 24px;
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+	color: #444;
+	padding: 10px 0 10px 0px;
+	margin-bottom: 20px;
+	font-size: 23px;
+	line-height: 44px;
+	padding-left: 30px;
+	font-weight: 400;
+}
+
+.show-password {
+	cursor: pointer;
+}
+
+.indicates-required {
+	margin-bottom: 0 !important;
+	text-align: right;
+}
+
+/* Error page */
+ .input-group-append > .btn-danger, .input-group-append > .btn-danger:hover, .input-group-append > .btn-danger:focus {
+	background:#1ABC9C !important;
+	border-color: #1ABC9C !important;
+}
+
+
+/* Pedidos */
+.tab-orders {
+	overflow: auto;
+}
+
+.tab-content .table.table-bordered {
+	min-width: 697px;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.tab-content .table.table-bordered th {
+	text-align: center;
+}
+
+.tab-content .table.table-bordered .icon {
+	cursor: pointer;
+}
+
+.tab-content .table.table-bordered th.icon, td.icon {
+    padding: 0.3rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tab-content .table.table-bordered td.icon a.pdf {
+	color: #000;
+}
+
+.tab-content .table.table-bordered td.icon a.cancel {
+	color: red;
+}
+
+/* Hoja pedido */
+.buttons-order-details {
+	display: flex !important;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+/* Carrito */
+.view-cart .table.cart {
+	min-width: 720px;
+}
+
+.view-cart .cart-product-quantity .quantity {
+	display: flex !important;
+	flex-wrap: nowrap;
+}
+
+.view-cart .button.button-3d.empty-cart, .button.button-3d.empty-cart:hover, .button.button-3d.empty-cart:focus {
+	background-color: #c82333 !important;
+	border-color: #921925 !important;
+}
+
+.view-cart .cart_item .right-buttons {
+	display: flex;
+}
+
+@media (max-width: 767.98px) {
+	.view-cart {
+		margin-bottom: 30px;
+	}
+
+	.view-cart table.cart {
+		margin-bottom: 0;
+	}
+
+	.view-cart table.cart .quantity .qty, table.cart .quantity .plus, table.cart .quantity .minus {
+		width: 36px !important;
+	}
+
+	.view-cart table.cart .quantity .qty {
+		width: 40px !important;
+		border: none !important;
+		border-left: 1px solid #DDD !important;
+		border-right: 1px solid #DDD !important;
+	}
+}
+
+/* Ficha producto admin */
+.commentlist.admin {
+	border-bottom: none;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+/* Charts */
+.charts-sidebar {
+	padding-bottom: 0px !important;
+	border-bottom: none !important;
+}
+
+.input-filter {
+	display: flex;
+	align-items: center;
+}
+
+.input-filter label {
+	width: 30%;
+	height: calc(2.25rem + 2px);
+	margin-bottom: 0px;
+}
+
+.input-filter input {
+	max-width: 70%;
+}
+
+.input-filter label a {
+	height: calc(2.25rem + 2px);
+	text-align: center;
+	align-items: center;
+	display: flex !important;
+}
