@@ -52,6 +52,10 @@
 	overflow: auto;
 }
 
+.tab-content .tab-orders > .table.table-bordered.table-striped {
+	margin-bottom: 50px;
+}
+
 .tab-content .table.table-bordered {
 	min-width: 697px;
 	width: 100%;
@@ -78,6 +82,14 @@
 
 .tab-content .table.table-bordered td.icon a.cancel {
 	color: red;
+}
+
+.more-details-order {
+	display: none;
+}
+
+.button-more-details-order {
+	margin-right: 10px;
 }
 
 /* Hoja pedido */
